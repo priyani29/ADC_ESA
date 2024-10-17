@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(/STYLES/fonts/Poppins-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 42px;
+  width: 42px;
+  padding-top: 8px;
+  padding-left: 140px;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  background-color: #e2d2b9;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.nav-sections {
+  padding: 15px;
+  font-family: Poppins-Regular;
+  color: #00465e;
+  text-align: center;
+}
+
+.nav-sections:hover {
+  background-color: #273940;
+}
+
+.nav-sections:hover a {
+  color: #e2d2b9;
+}
+
+.nav-sections a {
+  text-decoration: none;
+  padding: 15px;
+  font-family: Poppins-Regular;
+  color: #00465e;
+  text-align: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding-right: 15px;
+}
+
+.dropdown {
+  display: none;
+  grid-column: 2 / -1;
+  background-color: #e2d2b9;
+  text-align: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#menu-toggle:checked ~ .dropdown {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .cta {
+    grid-template-columns: 1fr auto;
+  }
+
+  .cta .nav-sections:nth-child(4),
+  .cta .nav-sections:nth-child(5),
+  .cta .nav-sections:nth-child(6) {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    color: #00465e;
+  }
+
+  .dropdown .nav-sections {
+    padding: 10px;
+    border-top: 1px solid #00465e;
+  }
+
+  .dropdown .nav-sections a {
+    color: #00465e;
+  }
+
+  .dropdown .nav-sections:hover {
+    background-color: #273940;
+  }
+
+  .dropdown .nav-sections:hover a {
+    color: #e2d2b9;
+  }
+
+  .logo img {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 600px) {
+  .dropdown .nav-sections {
+    display: none;
+  }
+
+  .dropdown {
+    display: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .cta .nav-sections:nth-child(4),
+  .cta .nav-sections:nth-child(5),
+  .cta .nav-sections:nth-child(6) {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+}

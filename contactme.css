@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Lostar;
+  src: url(/STYLES/fonts/Lostar.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(/STYLES/fonts/Poppins-Regular.ttf);
+}
+
+.contact-me {
+  background-color: #a4aeac;
+  height: auto;
+  padding: 20px;
+}
+
+.heading {
+  display: block;
+  font-family: Lostar;
+  color: #273940;
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+
+.first-line,
+.second-line,
+.third-line {
+  display: block;
+  font-family: Poppins-Regular;
+  color: #273940;
+  text-align: center;
+  font-size: 24px;
+  z-index: 100;
+}
+
+.third-line {
+  padding-bottom: 20px;
+}
+
+.email,
+.thoughts-box,
+.send-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.email input,
+.thoughts-box textarea {
+  display: block;
+  font-family: Poppins-Regular;
+  background-color: #273940;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  padding: 20px;
+}
+
+.send-button button {
+  display: block;
+  font-family: Poppins-Regular;
+  color: #e2d2b9;
+  background-color: #273940;
+  text-align: center;
+  font-size: 36px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 60%;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+
+.icons div img {
+  height: 42px;
+  width: 42px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+
+  .first-line,
+  .second-line,
+  .third-line {
+    font-size: 18px;
+  }
+
+  .email input,
+  .thoughts-box textarea {
+    font-size: 18px;
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .send-button button {
+    font-size: 24px;
+    max-width: 90%;
+    width: 80%;
+  }
+
+  .icons {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+
+  .icons div img {
+    height: 32px;
+    width: 32px;
+  }
+}

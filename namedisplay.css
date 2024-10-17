@@ -1,0 +1,106 @@
+@font-face {
+  font-family: Lostar;
+  src: url(/STYLES/fonts/Lostar.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(/STYLES/fonts/Poppins-Bold.ttf);
+}
+
+.name-place img {
+  height: auto;
+  width: 100%;
+  padding-top: 8px;
+  filter: blur(6px);
+}
+
+.name-place {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.main-name {
+  display: block;
+  font-family: Lostar;
+  color: #273940;
+  text-align: center;
+  font-size: 90px;
+  z-index: 100;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tagline {
+  display: block;
+  font-family: Poppins-bold;
+  color: #273940;
+  text-align: center;
+  font-size: 36px;
+  position: absolute;
+  z-index: 100;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+
+.tagline2 {
+  display: block;
+  font-family: Poppins-bold;
+  color: #e1c1a6;
+  text-align: center;
+  font-size: 36px; /* Large font size for big screens */
+  position: absolute;
+  z-index: 100;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+}
+
+.tagline3 {
+  display: block;
+  font-family: Poppins-bold;
+  color: #273940;
+  text-align: center;
+  font-size: 36px;
+  position: absolute;
+  z-index: 100;
+  top: 58%;
+  left: 54%;
+  transform: translate(-50%, 30%);
+}
+
+@media only screen and (max-width: 600px) {
+  .name-place {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .main-name {
+    font-size: 8vw;
+    top: 25%;
+  }
+
+  .tagline,
+  .tagline2,
+  .tagline3 {
+    font-size: 5vw;
+    top: 35%;
+  }
+
+  .tagline {
+    transform: translate(-50%, -30%);
+  }
+
+  .tagline2,
+  .tagline3 {
+    transform: translate(-50%, 115%);
+  }
+
+  .tagline3 {
+    left: 58%;
+  }
+}
